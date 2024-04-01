@@ -52,45 +52,45 @@ export function NavBar() {
                     >
                         <nav className="md:flex grow justify-center ">
                             <div
-                                className={`flex min-w-0 flex-row items-center justify-center gap-2 text-base ${isMenuOpen ? "flex-col" : "flex-row"
+                                className={`flex min-w-0 flex-row items-center justify-center text-base ${isMenuOpen ? "flex-col gap-16 " : "flex-row gap-1"
                                     }`}
                             >
                                 <Link
                                     onClick={closeMenu}
                                     href="/"
-                                    className="cursor-pointer px-3 uppercase font-semibold hover:text-lime-300 transition-all duration-300 w-36 text-center bg-transparent saira text-xl text-zinc-950 hover:underline"
+                                    className="cursor-pointer px-3 font-bold w-36 text-center bg-transparent text-lg text-zinc-950 hover:underline"
                                 >
                                     Inicio
                                 </Link>
                                 <button
                                     onClick={() => scrollToSection("services")}
-                                    className="cursor-pointer px-3 uppercase font-semibold hover:text-lime-300 transition-all duration-300 w-36 text-center bg-transparent saira text-xl text-zinc-950 hover:underline"
+                                    className="cursor-pointer px-3 font-bold w-36 text-center bg-transparent text-lg text-zinc-950 hover:underline"
                                 >
-                                    serviços
+                                    Serviços
                                 </button>
                                 <button
-                                    onClick={() => scrollToSection("results")}
-                                    className="cursor-pointer px-3 uppercase font-semibold hover:text-lime-300 transition-all duration-300 w-48 text-center bg-transparent saira text-xl text-zinc-950 hover:underline"
+                                    onClick={() => scrollToSection("lucation")}
+                                    className="cursor-pointer px-3 font-bold w-48 text-center bg-transparent text-lg text-zinc-950 hover:underline"
                                 >
-                                    onde estamos
+                                    Onde Estamos
                                 </button>
                                 <button
-                                    onClick={() => scrollToSection("team")}
-                                    className="cursor-pointer px-3 uppercase font-semibold hover:text-lime-300 transition-all duration-300 w-48 text-center bg-transparent saira text-xl text-zinc-950 hover:underline"
+                                    onClick={() => scrollToSection("about")}
+                                    className="cursor-pointer px-3 font-bold w-48 text-center bg-transparent text-lg text-zinc-950 hover:underline"
                                 >
-                                    quem somos
+                                    Quem Somos
+                                </button>
+                                <button
+                                    onClick={() => scrollToSection("about")}
+                                    className="cursor-pointer px-3 font-bold transition-all duration-300 w-44 text-center shadow-md bg-lime-400 py-3 rounded-3xl text-lg text-zinc-950 hover:bg-lime-500"
+                                >
+                                    Fale conosco
                                 </button>
 
                             </div>
                         </nav>
                     </div>
 
-                    <button
-                        onClick={() => scrollToSection("contacts")}
-                        className="cursor-pointer px-3 bg-neutral-50 saira text-2xl text-neutral-950 hover:underline hover:text-lime-300"
-                    >
-                        <PersonIcon className="size-7 w-8 transition-all duration-300 hover:size-8" />
-                    </button>
                 </div>
             </div>
         </div>
