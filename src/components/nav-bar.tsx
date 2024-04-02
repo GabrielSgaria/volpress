@@ -81,7 +81,7 @@ export function NavBar() {
                                 </button>
                                 <button
                                     onClick={() => scrollToSection("about")}
-                                    className="cursor-pointer px-3 font-bold transition-all duration-300 w-44 text-center shadow-md bg-lime-400 py-3 rounded-3xl text-lg text-zinc-950 hover:bg-lime-500"
+                                    className="cursor-pointer px-3 font-bold transition-all duration-300 w-44 text-center shadow-md bg-lime-400 py-3 rounded-2xl text-lg text-zinc-950 hover:bg-lime-500"
                                 >
                                     Fale conosco
                                 </button>
