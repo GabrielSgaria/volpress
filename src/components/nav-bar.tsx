@@ -23,7 +23,7 @@ export function NavBar() {
     };
     return (
         <div className="z-50 relative">
-            <div className=" bg-neutral-50">
+            <div className=" bg-neutral-100">
                 <div
                     className={`container mx-auto flex flex-row items-center justify-between gap-8 py-6 text-lg px-8  ${isMenuOpen ? "flex-col" : "flex-row"
                         }`}

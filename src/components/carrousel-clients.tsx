@@ -8,7 +8,7 @@ import Image from "next/image";
 
 export function ClientsCarrousel() {
     return (
-        <div className="flex overflow-hidden text-center justify-center text-4xl font-semibold bebasNeue text-neutral-100">
+        <div className="flex overflow-hidden text-center justify-center text-4xl font-semibold bebasNeue text-neutral-100 mt-5">
             <div>
                 <Splide
                     options={{
@@ -30,7 +30,7 @@ export function ClientsCarrousel() {
                     }}
                     extensions={{ AutoScroll }}
                 >
-                    <SplideSlide classname="flex items-center justify-center">
+                    <SplideSlide className="flex items-center justify-center">
                         <Image
                             width={100000}
                             height={100000}
