@@ -1,7 +1,7 @@
-import first from '../../public/image/frota-volpress.png'
-import second from '../../public/image/volpress.png'
-import third from '../../public/image/frota-volpress3.png'
-import fourth from '../../public/image/frota-volpres4.png'
+import first from '../../public/image/caminhao2.jpg'
+import second from '../../public/image/card1.jpg'
+import third from '../../public/image/daf.jpg'
+import fourth from '../../public/image/frota-volpress.png'
 
 export const images = [
     { src: first, alt: 'First' },
