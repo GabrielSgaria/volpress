@@ -1,11 +1,18 @@
-import { CardService } from '@/components/card-services'
+'use client'
+
+import { CardFrota } from '@/components/card-frota'
 import { ClientsCarrousel } from '@/components/carrousel-clients'
 import { NavBar } from '@/components/nav-bar'
 import Image from 'next/image'
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/thumbs'
+import 'swiper/css/free-mode'
 
 export default function Home() {
+
   return (
-    <div className="h-[2000px] bg-zinc-50 text-zinc-950">
+    <div className="h-[2000px] bg-white text-zinc-950">
       <NavBar />
       <section className="flex flex-row w-full h-[600px] items-center" >
         <div className='container mx-auto px-8 flex z-30 -mt-36 bg-transparent' >
@@ -39,18 +46,26 @@ export default function Home() {
       </section>
 
       <div>
-        <div className='flex flex-col container mx-auto justify-center items-center z-40 relative mt-8 gap-5 '>
+        <div className='flex flex-col container mx-auto justify-center items-center z-40 relative mt-28 gap-9'>
           <h1 className='font-black text-4xl uppercase text-zinc-800'>NOSSOS CLIENTES</h1>
-          <p className='max-w-[600px] text-center text-zinc-600'>Nossos clientes são de extrema importância para nós, e valorizamos cada um deles de forma igualitária. Aqui estão alguns exemplos destacados</p>
+          <p className='max-w-[650px] text-center text-zinc-600'>Nossos clientes são de extrema importância para nós, e valorizamos cada um deles de forma igualitária. Aqui estão alguns exemplos destacados</p>
         </div>
         <ClientsCarrousel />
       </div>
-      <section className='container mx-auto flex justify-center mt-16'>
-       
-          <CardService />
-
+      <section className='w-full py-10 bg-zinc-900 mt-20'>
+        <div className='container mx-auto flex items-center gap-20 flex-col '>
+          <div className='flex flex-col container mx-auto justify-center items-center z-40 relative mt-8 gap-5'>
+            <h1 className='font-black text-4xl uppercase text-zinc-200'>Nossa Frota</h1>
+            <p className='max-w-[700px] text-center text-zinc-200'>Nossa frota é moderna e padronizada para atender às exigências dos clientes. Utilizamos carretas LS e Vanderleia,
+              com no mínimo 14 metros de comprimento e equipadas com bobineiras para maior flexibilidade no transporte.
+              Isso nos permite oferecer maior capacidade de carga, resultando em melhor custo-benefício para os clientes.</p>
+          </div>
+          <CardFrota />
+        </div>
       </section>
-    </div>
+
+
+    </div >
   )
 }
 
