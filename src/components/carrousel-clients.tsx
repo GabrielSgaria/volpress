@@ -8,7 +8,7 @@ import Image from "next/image";
 
 export function ClientsCarrousel() {
     return (
-        <div className="flex overflow-hidden text-center justify-center text-4xl font-semibold bebasNeue text-neutral-100 my-8">
+        <div className="flex overflow-hidden text-center justify-center text-4xl font-semibold bebasNeue text-neutral-100 mt-16">
             <div>
                 <Splide
                     options={{

@@ -16,13 +16,15 @@ export default function Home() {
       <NavBar />
       <section className="flex flex-row w-full h-[600px] items-center" >
         <div className='container mx-auto px-8 flex z-30 -mt-36 bg-transparent' >
-          <div className='w-full flex flex-col gap-'>
-
-            <h1 className="mb-6 text-5xl font-black lg:text-6xl uppercase text-zinc-900">
+          <div className='w-full flex flex-col'>
+            <h1 className="-mb-2 text-5xl font-black lg:text-6xl uppercase text-zinc-900 tracking-widest text-shadow-md shadow-slate-900/60">
+              VOLPRESS TRANSPORTES
+            </h1>
+            <h1 className="mb-10 ml-3 text-4xl font-extrabold opacity-75 lg:text-base uppercase text-zinc-950">
               atuando desde 1996.
             </h1>
 
-            <p className="mb-8 text-lg font-medium lg:max-w-2xl lg:text-xl italic text-zinc-800 ">
+            <p className="mb-10 text-lg font-medium lg:max-w-2xl lg:text-xl italic text-zinc-800 ">
               "Transporte de cargas é a nossa vocação. Ao contratar a Volpress, você mantém o foco nos negócios, enquanto transportamos sua carga com excelência!"
             </p>
 
