@@ -15,7 +15,7 @@ export function CardFrota(){
     const [thumbsSwiper, setThumbsSwiper] = useState<SwiperCore | null>(null);
     
     return(
-        <div className='container mx-auto w-9/12 flex flex-col'>
+        <div className='container mx-auto w-8/12 flex flex-col'>
           <Swiper
             loop={true}
             spaceBetween={10}
@@ -25,7 +25,7 @@ export function CardFrota(){
                 thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null
             }}
             modules={[FreeMode, Navigation, Thumbs]}
-            className='h-[500px] w-full rounded-lg'
+            className='h-[500px] w-full rounded-lg shadow-xl'
           >
             {images.map((image, index) => (
               <SwiperSlide key={index}>
@@ -33,7 +33,7 @@ export function CardFrota(){
                   <Image
                     src={image.src}
                     alt={image.alt}
-                    className='block h-full w-full object-fill'
+                    className='block h-full w-full object-fill '
                   />
                 </div>
               </SwiperSlide>
@@ -49,7 +49,7 @@ export function CardFrota(){
             freeMode={true}
             watchSlidesProgress={true}
             modules={[FreeMode, Navigation, Thumbs]}
-            className='thumbs mt-3 h-32 w-full rounded-lg'
+            className='thumbs mt-3 h-32 w-full rounded-lg shadow-xl'
           >
             {images.map((image, index) => (
               <SwiperSlide key={index}>

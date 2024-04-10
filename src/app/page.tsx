@@ -3,11 +3,12 @@
 import { CardFrota } from '@/components/card-frota'
 import { ClientsCarrousel } from '@/components/carrousel-clients'
 import { NavBar } from '@/components/nav-bar'
-import Image from 'next/image'
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/thumbs'
 import 'swiper/css/free-mode'
+import { SobreNos } from '@/components/sobreNos'
+import { Footer } from '@/components/footer'
 
 
 export default function Home() {
@@ -30,20 +31,22 @@ export default function Home() {
                 "Transporte de cargas é a nossa vocação. Ao contratar a Volpress, você mantém o foco nos negócios, enquanto transportamos sua carga com excelência!"
               </p>
 
-              {/* <button className="cursor-pointer px-3 font-bold transition-all duration-300 w-44 text-center shadow-md bg-lime-400 py-3 rounded-2xl text-lg text-zinc-950 hover:bg-lime-500">
+              <button className="cursor-pointer px-3 font-bold transition-all duration-300 w-96 text-center shadow-md bg-lime-400/85 py-3 rounded-2xl text-lg text-zinc-950/85 hover:bg-lime-400 hover:text-zinc-950">
                 Fale Conosco
-              </button> */}
+              </button>
             </div>
           </div>
         </div>
       </section>
 
+      <SobreNos />
+      
       <section className='w-full py-24 bg-zinc-50 '>
         <div className='container mx-auto flex items-center gap-20 flex-col '>
           <div className='flex flex-col container mx-auto justify-center items-center z-40 relative gap-5'>
             <h1 className='font-black text-4xl uppercase text-zinc-700'>Nossa Frota</h1>
             <p className='max-w-[700px] text-center text-zinc-900'>Nossa frota é moderna e padronizada para atender às exigências dos clientes. Utilizamos carretas LS e Vanderleia,
-              com no mínimo 14 metros de comprimento e equipadas com bobineiras para maior flexibilidade no transporte.
+              com no mínimo 14 metros de comprimento e equipadas com bobineiras para maior flexibilidadenpm run dev no transporte.
               Isso nos permite oferecer maior capacidade de carga, resultando em melhor custo-benefício para os clientes.</p>
           </div>
           <CardFrota />
@@ -56,7 +59,11 @@ export default function Home() {
         </div>
         <ClientsCarrousel />
       </div>
+      <section>
 
+      </section>
+
+    <Footer />
     </div >
   )
 }
