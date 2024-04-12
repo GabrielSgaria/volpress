@@ -94,8 +94,7 @@ export function Footer() {
             Atual <br /> disponibilidade
           </h1>
           <p className="mt-8 max-w-[300px] text-center sm:text-start text-base text-zinc-600">
-            Estamos sempre abertos a novos projetos e colaborações, prontos para
-            explorar oportunidades imediatamente!
+            Estamos sempre abertos para recebelos em nossa matriz e prestar o melhor serviço possível!
           </p>
         </div>
 
