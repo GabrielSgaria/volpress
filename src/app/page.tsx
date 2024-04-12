@@ -9,6 +9,8 @@ import 'swiper/css/thumbs'
 import 'swiper/css/free-mode'
 import { SobreNos } from '@/components/sobreNos'
 import { Footer } from '@/components/footer'
+import { Truck, TruckTrailer } from '@phosphor-icons/react';
+import { CardServices } from '@/components/card-services';
 
 
 export default function Home() {
@@ -60,10 +62,18 @@ export default function Home() {
         </div>
         <ClientsCarrousel />
       </section>
+
+
       <section className='bg-zinc-50 py-16'>
         <div className='flex flex-col container mx-auto justify-center items-center z-40 relative gap-9'>
           <h1 className='font-black text-4xl uppercase text-zinc-700'>SERVIÇOS VOLPRESS</h1>
           <p className='max-w-[650px] text-center text-zinc-600'>Seja qual for o serviço contratado, não abrimos mãos da pontualidade e segurança, pontualidade é a nossa meta diária, e segurança a nossa obsessão. </p>
+          <h1 className='text-2xl text-zinc-600 font-black'>PRINCIPAIS PRODUTOS TRANSPORTADOS</h1>
+        </div>
+        <div className='flex container mx-auto items-center justify-between gap-10 mt-10'>
+          <CardServices icon={<Truck />} title='Paineis de madeira' content='Transporte seguro e pontual de painéis de madeira, preservando a integridade do material.' />
+          <CardServices icon={<TruckTrailer />} title='Alimentos Paletizados' content='Entrega confiável e higiênica de alimentos paletizados, seguindo rigorosos padrões de segurança alimentar.' />
+          <CardServices icon={<Truck />} title='Siderurgica' content='Soluções robustas para o transporte de produtos siderúrgicos, com foco em eficiência e segurança.' />
         </div>
       </section>
 
