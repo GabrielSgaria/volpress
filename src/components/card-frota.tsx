@@ -15,7 +15,7 @@ export function CardFrota(){
     const [thumbsSwiper, setThumbsSwiper] = useState<SwiperCore | null>(null);
     
     return(
-        <div className='container mx-auto w-8/12 flex flex-col'>
+        <div className='container mx-auto w-full sm:w-8/12 flex flex-col'>
           <Swiper
             loop={true}
             spaceBetween={10}

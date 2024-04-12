@@ -25,13 +25,13 @@ export function NavBar() {
         <div className="z-50 relative">
             <div className="bg-transparent">
                 <div
-                    className={`container mx-auto flex flex-row items-center justify-between gap-8 py-6 text-lg px-8  ${isMenuOpen ? "flex-col border-b border-zinc-50/10" : "flex-row"
+                    className={`container mx-auto flex flex-row items-center justify-between gap-8 py-6 text-lg px-8  ${isMenuOpen ? "flex-col border-b-2 border-zinc-600/30 shadow-xl pb-20" : "flex-row"
                         }`}
                 >
                     <div className="flex h-9 w-9 items-center justify-center lg:hidden">
                         <DotsHorizontalIcon
                             onClick={handleMenuToggle}
-                            className="size-8 text-zinc-950 hover:size-9 focus:outline-none lg:hidden"
+                            className="size-8 text-zinc-50 hover:size-9 focus:outline-none lg:hidden"
                         />
                     </div>
                     <div className="w-36">
@@ -57,31 +57,31 @@ export function NavBar() {
                                 <Link
                                     onClick={closeMenu}
                                     href="/"
-                                    className="cursor-pointer px-3 font-bold w-36 text-center bg-transparent text-lg text-zinc-950 hover:underline"
+                                    className="cursor-pointer px-3 font-bold w-36 text-center bg-transparent text-lg text-zinc-50 hover:underline"
                                 >
                                     Inicio
                                 </Link>
                                 <button
                                     onClick={() => scrollToSection("services")}
-                                    className="cursor-pointer px-3 font-bold w-36 text-center bg-transparent text-lg text-zinc-950 hover:underline"
+                                    className="cursor-pointer px-3 font-bold w-36 text-center bg-transparent text-lg text-zinc-50 hover:underline"
                                 >
                                     Serviços
                                 </button>
                                 <button
                                     onClick={() => scrollToSection("lucation")}
-                                    className="cursor-pointer px-3 font-bold w-48 text-center bg-transparent text-lg text-zinc-950 hover:underline"
+                                    className="cursor-pointer px-3 font-bold w-48 text-center bg-transparent text-lg text-zinc-50 hover:underline"
                                 >
                                     Onde Estamos
                                 </button>
                                 <button
                                     onClick={() => scrollToSection("about")}
-                                    className="cursor-pointer px-3 font-bold w-48 text-center bg-transparent text-lg text-zinc-950 hover:underline"
+                                    className="cursor-pointer px-3 font-bold w-48 text-center bg-transparent text-lg text-zinc-50 hover:underline"
                                 >
                                     Quem Somos
                                 </button>
                                 <button
                                     onClick={() => scrollToSection("about")}
-                                    className="cursor-pointer px-3 font-bold transition-all duration-300 w-44 text-center shadow-md bg-lime-400 py-3 rounded-2xl text-lg text-zinc-950 hover:bg-lime-500"
+                                    className="cursor-pointer px-3 font-bold transition-all duration-300 w-44 text-center shadow-md bg-lime-500 py-3 rounded-2xl text-lg text-zinc-950 hover:bg-lime-400"
                                 >
                                     Fale conosco
                                 </button>
