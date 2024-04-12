@@ -7,7 +7,7 @@ export function SobreNos() {
             <div className="mx-auto container flex px-4 sm:px-0 h-full sm:h-[600px]">
                 <div className="w-full flex flex-col-reverse items-center sm:flex-row sm:justify-around ">
                     <div className="flex flex-col gap-10 justify-center items-center text-center sm:text-start sm:items-start">
-                        <h1 className="font-black text-4xl sm:text-5xl uppercase text-zinc-700">Sobre a Volpress</h1>
+                        <h1 className="font-black text-3xl sm:text-5xl uppercase text-zinc-700">Sobre a Volpress</h1>
                         <p className="text-base sm:text-lg max-w-[580px] text-zinc-900">
                             A Volpress Transportes é referência no segmento de transportes rodoviários de cargas,
                             reconhecida pela qualidade, confiança e inovação na prestação de seus serviços, atuando desde 1996.
