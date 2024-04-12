@@ -25,7 +25,7 @@ export function NavBar() {
         <div className="z-50 relative">
             <div className="bg-transparent">
                 <div
-                    className={`container mx-auto flex flex-row items-center justify-between gap-8 py-6 text-lg px-8  ${isMenuOpen ? "flex-col" : "flex-row"
+                    className={`container mx-auto flex flex-row items-center justify-between gap-8 py-6 text-lg px-8  ${isMenuOpen ? "flex-col border-b border-zinc-50/10" : "flex-row"
                         }`}
                 >
                     <div className="flex h-9 w-9 items-center justify-center lg:hidden">
