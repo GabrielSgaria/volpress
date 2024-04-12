@@ -40,7 +40,7 @@ export default function Home() {
       </section>
 
       <SobreNos />
-      
+
       <section className='w-full py-24 bg-zinc-50 '>
         <div className='container mx-auto flex items-center gap-20 flex-col '>
           <div className='flex flex-col container mx-auto justify-center items-center z-40 relative gap-5'>
@@ -63,7 +63,7 @@ export default function Home() {
 
       </section>
 
-    <Footer />
+      <Footer />
     </div >
   )
 }
