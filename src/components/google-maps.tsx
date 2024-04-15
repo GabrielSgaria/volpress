@@ -25,7 +25,7 @@ export default function GoogleMaps() {
             const mapOptions: google.maps.MapOptions = {
                 center: locationInMap,
                 zoom: 15,
-                mapId: 'MY_NEXTJS_MAPID',
+                mapId: 'AIzaSyDkV5hxnlGzSZOlzAMMU5gvH0c5GhkMMko',
 
             }
             const map = new Map(mapRef.current as HTMLDivElement, mapOptions);
