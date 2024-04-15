@@ -11,8 +11,9 @@ export default function GoogleMaps() {
             const loader = new Loader({
                 apiKey: "AIzaSyDkV5hxnlGzSZOlzAMMU5gvH0c5GhkMMko",
                 version: "quarterly"
+                
             });
-
+        
             const { Map } = await loader.importLibrary('maps')
 
             const locationInMap = {
