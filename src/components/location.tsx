@@ -1,3 +1,4 @@
+'use client'
 import GoogleMaps from "./google-maps"
 
 export function Location() {
