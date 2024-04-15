@@ -11,6 +11,7 @@ import { SobreNos } from '@/components/sobreNos'
 import { Footer } from '@/components/footer'
 import { Truck, TruckTrailer } from '@phosphor-icons/react';
 import { CardServices } from '@/components/card-services';
+import { Location } from '@/components/location';
 
 
 export default function Home() {
@@ -40,11 +41,10 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className='bg-zinc-200 py-16'>
+      <section className='bg-zinc-200 py-16' id='services'>
         <div className='flex flex-col container mx-auto justify-center items-center z-40 relative gap-9'>
           <h1 className='font-black text-3xl sm:text-4xl uppercase text-zinc-700'>SERVIÇOS VOLPRESS</h1>
           <p className='max-w-[650px] text-center text-zinc-600 px-3'>Seja qual for o serviço contratado, não abrimos mãos da pontualidade e segurança, pontualidade é a nossa meta diária, e segurança a nossa obsessão. </p>
-          {/* <h1 className='text-2xl text-zinc-600 font-black -mb-6 mt-6 text-center'>PRINCIPAIS PRODUTOS TRANSPORTADOS</h1> */}
         </div>
         <div className='flex flex-col sm:flex-row container mx-auto items-center sm:justify-around gap-10 md:gap-6 lg:gap-10 mt-10 px-3 sm:px-0'>
           <CardServices icon={<Truck />} title='Paineis de madeira' content='Transporte seguro e pontual de painéis de madeira, preservando a integridade do material.' />
@@ -67,13 +67,14 @@ export default function Home() {
       </section>
 
       <SobreNos />
-      <section className='bg-zinc-200 py-16'>
+      <section className='bg-zinc-200 pt-16'>
         <div className='flex flex-col container mx-auto justify-center items-center z-40 relative gap-9'>
           <h1 className='font-black text-3xl sm:text-4xl uppercase text-zinc-700'>NOSSOS CLIENTES</h1>
           <p className='max-w-[650px] text-center text-zinc-600 px-3'>Nossos clientes são de extrema importância para nós, e valorizamos cada um deles de forma igualitária. Aqui estão alguns exemplos destacados</p>
         </div>
         <ClientsCarrousel />
       </section>
+      <Location />
       <Footer />
     </div >
   )

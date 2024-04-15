@@ -68,16 +68,16 @@ export function NavBar() {
                                     Serviços
                                 </button>
                                 <button
-                                    onClick={() => scrollToSection("lucation")}
-                                    className="cursor-pointer px-3 font-bold w-40 text-center bg-transparent text-lg text-zinc-50 hover:underline"
-                                >
-                                    Onde Estamos
-                                </button>
-                                <button
                                     onClick={() => scrollToSection("about")}
                                     className="cursor-pointer px-3 font-bold w-40 text-center bg-transparent text-lg text-zinc-50 hover:underline"
                                 >
                                     Quem Somos
+                                </button>
+                                <button
+                                    onClick={() => scrollToSection("location")}
+                                    className="cursor-pointer px-3 font-bold w-40 text-center bg-transparent text-lg text-zinc-50 hover:underline"
+                                >
+                                    Onde Estamos
                                 </button>
                                 <button
                                     onClick={() => scrollToSection("about")}

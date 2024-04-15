@@ -3,7 +3,7 @@ import frota1 from '../../public/image//frota/frente-volpress.jpg'
 
 export function SobreNos() {
     return (
-        <section className="bg-zinc-50 py-10">
+        <section className="bg-zinc-50 py-10" id="about">
             <div className="mx-auto container flex px-4 sm:px-0 h-full sm:h-[600px]">
                 <div className="w-full flex flex-col-reverse items-center sm:flex-row sm:justify-around ">
                     <div className="flex flex-col gap-10 justify-center items-center text-center sm:text-start sm:items-start">
