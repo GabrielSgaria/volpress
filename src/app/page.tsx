@@ -11,7 +11,7 @@ import { SobreNos } from '@/components/sobreNos'
 import { Footer } from '@/components/footer'
 import { Truck, TruckTrailer } from '@phosphor-icons/react';
 import { CardServices } from '@/components/card-services';
-import GoogleMaps from '@/components/google-maps';
+
 
 
 export default function Home() {
