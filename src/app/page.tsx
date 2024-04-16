@@ -83,10 +83,14 @@ export default function Home() {
             Espírito Santo, Rio de Janeiro, São Paulo, Paraná, Santa Catarina e Rio Grande do Sul, entre outros.
           </p>
         </div>
-        <GoogleMaps />
+        <iframe
+          className='w-full h-[300px] mt-10 border-0'
+          src="https://www.google.com/maps/embed/v1/place?q=Volpress%20caminhões&key=AIzaSyDkV5hxnlGzSZOlzAMMU5gvH0c5GhkMMko"
+        />
+
       </section>
       <Footer />
-    </div >
+    </div>
   )
 }
 
