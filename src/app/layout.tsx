@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'Volpress - Transportadora',
   description: 'Transportadora volpress',
-  metadataBase: new URL("https://volpress.vercel.app"),
+  metadataBase: new URL("https://www.volpress.com.br"),
   icons: '/favicon.png',
   openGraph: {
     title: "Volpress - Transportadora",
