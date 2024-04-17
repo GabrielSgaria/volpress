@@ -35,7 +35,7 @@ export function Footer() {
               onClick={() =>
                 sendMensage(
                   5541995020104,
-                  "Olá! Vim através do site da M2 Agência de Marketing."
+                  "Olá! Vim através do site da Volpress!."
                 )
               }
               className="flex cursor-pointer items-center justify-center gap-4 text-zinc-800"

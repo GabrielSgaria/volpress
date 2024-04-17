@@ -6,6 +6,16 @@ import Image from "next/image";
 import { motion } from 'framer-motion'
 
 export function NavBar() {
+
+    function sendMensage(numeroTelefone: number, mensagemPadrao: string) {
+        var linkWhatsApp =
+            "https://wa.me/" +
+            numeroTelefone +
+            "?text=" +
+            encodeURIComponent(mensagemPadrao);
+
+        window.open(linkWhatsApp, "_blank");
+    }
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const handleMenuToggle = () => {
@@ -86,7 +96,12 @@ export function NavBar() {
                                     Onde Estamos
                                 </button>
                                 <button
-                                    onClick={() => scrollToSection("about")}
+                                    onClick={() =>
+                                        sendMensage(
+                                            5541995020104,
+                                            "Olá! Vim através do site da Volpress!."
+                                        )
+                                    }
                                     className="cursor-pointer px-3 font-bold transition-all duration-300 lg:w-44 text-center shadow-md bg-lime-500 py-3 rounded-2xl text-lg text-zinc-950 hover:bg-lime-400"
                                 >
                                     Fale conosco

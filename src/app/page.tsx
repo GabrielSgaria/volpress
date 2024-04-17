@@ -18,6 +18,15 @@ import { motion } from 'framer-motion'
 
 
 export default function Home() {
+  function sendMensage(numeroTelefone: number, mensagemPadrao: string) {
+    var linkWhatsApp =
+      "https://wa.me/" +
+      numeroTelefone +
+      "?text=" +
+      encodeURIComponent(mensagemPadrao);
+
+    window.open(linkWhatsApp, "_blank");
+  }
 
   return (
     <div className="h-[2000px] bg-white text-zinc-950">
@@ -41,7 +50,14 @@ export default function Home() {
                 "Transporte de cargas é a nossa vocação. Ao contratar a Volpress, você mantém o foco nos negócios, enquanto transportamos sua carga com excelência!"
               </p>
 
-              <button className="cursor-pointer px-3 font-bold transition-all duration-300 w-96 text-center shadow-md bg-lime-500 py-3 rounded-2xl text-lg text-zinc-950/85 hover:bg-lime-400 hover:text-zinc-950">
+              <button
+                onClick={() =>
+                  sendMensage(
+                    5541995020104,
+                    "Olá! Vim através do site da Volpress!."
+                  )
+                }
+                className="cursor-pointer px-3 font-bold transition-all duration-300 w-96 text-center shadow-md bg-lime-500 py-3 rounded-2xl text-lg text-zinc-950/85 hover:bg-lime-400 hover:text-zinc-950">
                 Fale Conosco
               </button>
             </motion.div>
@@ -97,10 +113,8 @@ export default function Home() {
               </motion.div>
             </div>
           </div>
-
         </div>
       </section >
-
 
       <section className='w-full py-24 bg-zinc-50'>
         <div className='container mx-auto flex items-center gap-20 flex-col px-4 sm:px-0'>
