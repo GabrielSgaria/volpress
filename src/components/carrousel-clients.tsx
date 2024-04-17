@@ -63,16 +63,7 @@ export function ClientsCarrousel() {
                             width={100000}
                             height={100000}
                             alt=""
-                            src="/image/clients/csn.png"
-                            className=" object-contain h-[100px] w-[100px]"
-                        />
-                    </SplideSlide>
-                    <SplideSlide>
-                        <Image
-                            width={100000}
-                            height={100000}
-                            alt=""
-                            src="/image/clients/logo_romagnole.png"
+                            src="/image/clients/bounge.svg"
                             className=" object-contain h-[100px] w-[100px]"
                         />
                     </SplideSlide>
