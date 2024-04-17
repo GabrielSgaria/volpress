@@ -3,6 +3,7 @@ import Link from "next/link";
 import { DotsHorizontalIcon, PersonIcon } from "@radix-ui/react-icons";
 import { useState } from "react";
 import Image from "next/image";
+import { motion } from 'framer-motion'
 
 export function NavBar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -27,14 +28,19 @@ export function NavBar() {
                 <div
                     className={`container mx-auto flex flex-row items-center justify-between gap-8 py-6 text-lg px-8 sm:px-3 ${isMenuOpen ? "flex-col pb-20" : "flex-row"
                         }`}
-                    >
+                >
                     <div className="flex h-9 w-9 items-center justify-center lg:hidden">
                         <DotsHorizontalIcon
                             onClick={handleMenuToggle}
                             className="size-8 text-zinc-50 hover:size-9 focus:outline-none lg:hidden"
                         />
                     </div>
-                    <div className="w-36">
+                    <motion.div
+                        initial={{ opacity: 0, y: -30, scale: 0.7 }}
+                        animate={{ opacity: 1, y: 0, scale: 1 }}
+                        transition={{ duration: 0.2 }}
+                        className="w-36">
+
                         <Link href="/" onClick={closeMenu}>
                             <Image
                                 width={400}
@@ -43,7 +49,7 @@ export function NavBar() {
                                 alt="Logo Principal"
                             />
                         </Link>
-                    </div>
+                    </motion.div>
 
                     <div
                         className={`lg:flex lg:items-center lg:gap-8 ${isMenuOpen ? "flex" : "hidden"
