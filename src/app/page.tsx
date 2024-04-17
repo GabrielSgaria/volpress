@@ -15,6 +15,7 @@ import Image from 'next/image';
 import mapaCobertura from '../../public/image/map.png'
 import { DotFilledIcon } from '@radix-ui/react-icons';
 import { motion } from 'framer-motion'
+import { ButtonWhatsAppFixed } from '../components/button-whatsapp-fixed';
 
 
 export default function Home() {
@@ -151,7 +152,7 @@ export default function Home() {
           className='w-full h-[300px] mt-10 border-0'
           src="https://www.google.com/maps/embed/v1/place?q=Volpress%20caminhões&key=AIzaSyDkV5hxnlGzSZOlzAMMU5gvH0c5GhkMMko"
         />
-
+        <ButtonWhatsAppFixed />
       </section>
       <Footer />
     </div >
