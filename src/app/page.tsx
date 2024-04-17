@@ -11,6 +11,9 @@ import { SobreNos } from '@/components/sobreNos'
 import { Footer } from '@/components/footer'
 import { Truck, TruckTrailer } from '@phosphor-icons/react';
 import { CardServices } from '@/components/card-services';
+import Image from 'next/image';
+import mapaCobertura from '../../public/image/map.png'
+import { DotFilledIcon } from '@radix-ui/react-icons';
 
 
 
@@ -21,7 +24,7 @@ export default function Home() {
       <section className="bg-cover bg-top bg-no-repeat from-cyan-500 to-blue-500 bg-[url('../../public/image/frota/frotabg.jpg')] shadow-2xl"  >
         <NavBar />
         <div className='flex flex-row w-full h-[650px] sm:h-[700px] items-center '>
-          <div className='container mx-auto px-8 flex z-30 -mt-72' >
+          <div className='container mx-auto px-8 flex z-30 -mt-40' >
             <div className='w-full flex flex-col items-center'>
               <h1 className="mt-36 sm:mt-0 text-4xl text-center font-black lg:text-6xl uppercase text-zinc-50 tracking-widest text-shadow-md shadow-slate-900/60">
                 VOLPRESS TRANSPORTES
@@ -52,22 +55,52 @@ export default function Home() {
           <CardServices icon={<Truck />} title='Siderurgica' content='Soluções robustas para o transporte de produtos siderúrgicos, com foco em eficiência e segurança.' />
         </div>
       </section>
+      <section className='bg-zinc-50 py-16'>
+        <div className='container flex mx-auto'>
+          <div className='flex flex-col items-center gap-10'>
+            <h1 className='font-black text-3xl sm:text-4xl uppercase text-zinc-700'>COBERTURA GEOGRÁFICA</h1>
+            <div className='flex flex-col-reverse gap-20 sm:flex-row justify-between'>
+              <div className='w-full sm:w-1/2 px-3 sm:px-0 item-start'>
+                <Image width={9000} height={9000} src={mapaCobertura} alt="Mapa de cobertura geográfica volpress" />
+              </div>
+              <div className='w-full sm:w-1/2 flex flex-col items-center sm:items-start justify-center gap-10'>
+                <h1 className='font-black text-3xl sm:text-4xl uppercase text-zinc-700'>Brasil</h1>
+                <ul className='flex flex-col gap-3 text-2xl sm:text-3xl text-zinc-900 text-center sm:text-start'>
+                  <li className='flex'><DotFilledIcon className='size-6 h-full' /> Paraná</li>
+                  <li className='flex'><DotFilledIcon className='size-6 h-full' />São Paulo</li>
+                  <li className='flex'><DotFilledIcon className='size-6 h-full' />Santa Catarina</li>
+                  <li className='flex'><DotFilledIcon className='size-6 h-full' />Rio de Janeiro</li>
+                  <li className='flex'><DotFilledIcon className='size-6 h-full' />Espirito Santo</li>
+                </ul>
+                <h1 className='font-normal sm:text-xl text-zinc-700 text-center sm:text-justify px-3 sm:px-0'>
+                  <span className='font-bold'>A 28 Anos no mercado</span>, a Volpress está buscando se especializar ainda mais a cada dia para atender às
+                  necessidades dos nossos clientes de forma excepcional.
+                  Com um compromisso contínuo com a excelência, inovação e a agilidade em nossos transportes.
+                </h1>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
 
 
       <section className='w-full py-24 bg-zinc-50'>
         <div className='container mx-auto flex items-center gap-20 flex-col px-4 sm:px-0'>
           <div className='flex flex-col container mx-auto justify-center items-center z-40 relative gap-5'>
             <h1 className='font-black text-3xl sm:text-4xl uppercase text-zinc-700'>Nossa Frota</h1>
-            <p className='max-w-[700px] text-center text-zinc-900 px-3'>Nossa frota é moderna e padronizada para atender às exigências dos clientes. Utilizamos carretas LS e Vanderleia,
-              com no mínimo 14 metros de comprimento e equipadas com bobineiras para maior flexibilidadenpm run dev no transporte.
-              Isso nos permite oferecer maior capacidade de carga, resultando em melhor custo-benefício para os clientes.</p>
+            <p className='max-w-[700px] text-center text-zinc-900 px-3'>
+              Nossa frota é moderna e padronizada para atender às exigências dos clientes.
+              Utilizamos carretas LS e Vanderleia, com no mínimo 14 metros de comprimento e equipadas com bobineiras para maior flexibilidade no transporte.
+              Isso nos permite oferecer maior capacidade de carga, resultando em melhor custo-benefício para os clientes
+            </p>
           </div>
           <CardFrota />
         </div>
       </section>
 
       <SobreNos />
-      <section className='bg-zinc-200 pt-16'>
+      <section className='bg-zinc-200 py-16'>
         <div className='flex flex-col container mx-auto justify-center items-center z-40 relative gap-9'>
           <h1 className='font-black text-3xl sm:text-4xl uppercase text-zinc-700'>NOSSOS CLIENTES</h1>
           <p className='max-w-[650px] text-center text-zinc-600 px-3'>Nossos clientes são de extrema importância para nós, e valorizamos cada um deles de forma igualitária. Aqui estão alguns exemplos destacados</p>
@@ -78,9 +111,9 @@ export default function Home() {
         <div className='flex flex-col container mx-auto justify-center items-center z-40 relative gap-9'>
           <h1 className='font-black text-3xl sm:text-4xl uppercase text-zinc-700'>ONDE ESTAMOS</h1>
           <p className='max-w-[650px] text-center text-zinc-600 px-3'>
-            Nossa matriz esta localizada na Rod BR 116, Km 110, n. 22.730 Sala 2 - Tatuquara - 81690-500 -
-            Curitiba PR. Esse ponto estratégico nos permite atender com maior agilidade os estados de Minas Gerais,
-            Espírito Santo, Rio de Janeiro, São Paulo, Paraná, Santa Catarina e Rio Grande do Sul, entre outros.
+            Nossa matriz está localizada na Rodovia BR-116, Km 110, nº 22.730, Sala 2, Tatuquara, CEP 81690-500, Curitiba, PR.
+            Esse ponto estratégico nos permite atender com maior agilidade os estados de Minas Gerais, Espírito Santo, Rio de Janeiro,
+            São Paulo, Paraná, Santa Catarina e Rio Grande do Sul, entre outros.
           </p>
         </div>
         <iframe
