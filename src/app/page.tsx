@@ -74,39 +74,39 @@ export default function Home() {
           initial={{ opacity: 0, x: -50, scale: 0.7 }}
           whileInView={{ opacity: 1, x: 0, scale: 1 }}
           transition={{ duration: 0.5 }}
-          className='flex flex-col sm:flex-row container mx-auto items-center sm:justify-around gap-10 md:gap-6 lg:gap-10 mt-10 px-3 sm:px-0'>
+          className='flex flex-col sm:flex-row container mx-auto items-center sm:justify-around gap-10 md:gap-6 lg:gap-2 mt-10 px-3 sm:px-0 lg:px-5'>
           <CardServices icon={<Truck />} title='Paineis de madeira' content='Transporte seguro e pontual de painéis de madeira, preservando a integridade do material.' />
           <CardServices icon={<TruckTrailer />} title='Alimentos Paletizados' content='Entrega confiável e higiênica de alimentos paletizados, seguindo rigorosos padrões de segurança alimentar.' />
           <CardServices icon={<Truck />} title='Siderurgica' content='Soluções robustas para o transporte de produtos siderúrgicos, com foco em eficiência e segurança.' />
         </motion.div>
       </section>
       <section className='bg-zinc-50 py-16'>
-        <div className='container flex mx-auto'>
+        <div className='container flex mx-auto px-0 md:px-10 lg:px-5 xl:px-10'>
           <div className='flex flex-col items-center gap-10'>
             <h1 className='font-black text-3xl sm:text-4xl uppercase text-zinc-700'>COBERTURA GEOGRÁFICA</h1>
-            <div className='flex flex-col-reverse gap-20 sm:flex-row justify-between'>
+            <div className='flex flex-col-reverse gap-20 sm:gap-10 md:flex-row justify-between items-center'>
               <motion.div
                 initial={{ opacity: 0, x: -50, scale: 0.7 }}
                 whileInView={{ opacity: 1, x: 0, scale: 1 }}
                 transition={{ duration: 0.5 }}
 
-                className='w-full sm:w-1/2 px-3 sm:px-0 item-start'>
+                className='w-full sm:w-1/2 px-3 sm:px-0 item-start justify-center'>
                 <Image width={9000} height={9000} src={mapaCobertura} alt="Mapa de cobertura geográfica volpress" />
               </motion.div>
               <motion.div
                 initial={{ opacity: 0, x: +50, scale: 0.7 }}
                 whileInView={{ opacity: 1, x: 0, scale: 1 }}
                 transition={{ duration: 0.5 }}
-                className='w-full sm:w-1/2 flex flex-col items-center sm:items-start justify-center gap-10'>
+                className='w-full sm:w-1/2 flex flex-col items-center sm:items-start justify-center gap-10 '>
                 <h1 className='font-black text-3xl sm:text-4xl uppercase text-zinc-700'>Brasil</h1>
                 <ul className='flex flex-col gap-3 text-2xl sm:text-3xl text-zinc-900 text-center sm:text-start'>
-                  <li className='flex'><DotFilledIcon className='size-6 h-full' /> Paraná</li>
-                  <li className='flex'><DotFilledIcon className='size-6 h-full' />São Paulo</li>
-                  <li className='flex'><DotFilledIcon className='size-6 h-full' />Santa Catarina</li>
-                  <li className='flex'><DotFilledIcon className='size-6 h-full' />Rio de Janeiro</li>
-                  <li className='flex'><DotFilledIcon className='size-6 h-full' />Espirito Santo</li>
+                  <li className='flex sm:text-2xl'><DotFilledIcon className='size-6 h-full' /> Paraná</li>
+                  <li className='flex sm:text-2xl'><DotFilledIcon className='size-6 h-full' />São Paulo</li>
+                  <li className='flex sm:text-2xl'><DotFilledIcon className='size-6 h-full' />Santa Catarina</li>
+                  <li className='flex sm:text-2xl'><DotFilledIcon className='size-6 h-full' />Rio de Janeiro</li>
+                  <li className='flex sm:text-2xl'><DotFilledIcon className='size-6 h-full' />Espirito Santo</li>
                 </ul>
-                <h1 className='font-normal sm:text-xl text-zinc-700 text-center sm:text-justify px-3 sm:px-0'>
+                <h1 className='font-normal sm:text-base text-zinc-700 text-center sm:text-justify px-3 sm:px-0'>
                   <span className='font-bold'>A 28 Anos no mercado</span>, a Volpress está buscando se especializar ainda mais a cada dia para atender às
                   necessidades dos nossos clientes de forma excepcional.
                   Com um compromisso contínuo com a excelência, inovação e a agilidade em nossos transportes.
