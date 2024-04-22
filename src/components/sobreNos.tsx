@@ -29,7 +29,7 @@ export function SobreNos() {
                         initial={{ opacity: 0, x: +50, scale: 0.7 }}
                         whileInView={{ opacity: 1, x: 0, scale: 1 }}
                         transition={{ duration: 0.5 }}
-                        className="mb-10 sm:mb-0 max-w-[70%] xl:w-1/2 h-full sm:h-full rounded-2xl overflow-hidden">
+                        className="mb-10 sm:mb-0 w-full sm:max-w-[70%] xl:w-1/2 h-full sm:h-full rounded-2xl overflow-hidden">
                         <Image
                             width={600}
                             height={800}
